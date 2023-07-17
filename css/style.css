@@ -3,9 +3,67 @@
 :root {
   --font-family: "Poppins", sans-serif;
   --btn-color: #e02c6d;
+  --text-color: #3a3a3a;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+}
+header {
+  margin: 0 120px;
+  padding-top: 70px;
+}
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item ul li {
+  display: inline;
+  list-style: none;
+}
+.nav-item ul li a {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 30px;
+}
+.logo {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 700;
+}
+.logo span {
+  color: var(--btn-color);
+}
+/****************************
+  Nave Section End
+****************************/
+
+/****************************
+    Mobile Section Start
+****************************/
+@media screen and (max-width: 576px) {
+  .head-container {
+    flex-direction: column;
+  }
+  header {
+    padding: 20px;
+    margin: 0;
+  }
+  .logo {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .nav-item ul li a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
 }
